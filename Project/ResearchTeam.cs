@@ -92,7 +92,7 @@ namespace Project
             }
             set
             {
-                if(value.ToString() == "")
+                if (value.ToString() == "")
                 {
                     throw new ArgumentNullException("Пустой объект.");
                 }
@@ -115,12 +115,12 @@ namespace Project
         {
             int new_size = paper.Length + papers.Length;
             Paper[] pap = new Paper[new_size];
-            for(int i = 0; i < papers.Length; i++)
+            for (int i = 0; i < papers.Length; i++)
             {
                 pap[i] = papers[i];
             }
             int ind = 0;
-            for(int i = papers.Length;i < pap.Length; i++)
+            for (int i = papers.Length; i < pap.Length; i++)
             {
                 pap[i] = paper[ind++];
             }
